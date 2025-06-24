@@ -1,0 +1,42 @@
+{
+  "name": "music-rehearsal-pro",
+  "version": "1.0.0",
+  "description": "A web application for automatically scheduling band rehearsals, sending reminders, tracking attendance, and suggesting optimal rehearsal times.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/dist/index.js",
+    "dev": "npm run dev:server & npm run dev:client",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "install:all": "npm install && npm run install:server && npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/music-rehearsal-pro.git"
+  },
+  "keywords": [
+    "rehearsal",
+    "scheduler",
+    "band",
+    "music",
+    "attendance",
+    "tracking"
+  ],
+  "author": "DX AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/music-rehearsal-pro/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/music-rehearsal-pro#readme"
+}
